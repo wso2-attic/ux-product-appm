@@ -30,7 +30,6 @@
     background-color: #007d85;
 }
 .media-left {
-    width: 200px;
     background-color:#EFEFEF;
     padding-right:0px;
 }
@@ -58,7 +57,6 @@ nav.navigation {
 
 nav.navigation > a, nav.navigation {
     display: table;
-    width: 200px;
     height: 40px;
     color: #fff;
     text-decoration: none;
@@ -436,8 +434,11 @@ ul.product-tags {
 .body-wrapper a:hover {
     text-decoration: none;
 }
+.more-info{
+    position: relative;
+}
 .more-info.pull-right>.dropdown-menu {
-    margin-right: 15px;
+    margin-right: -10px;
 }
 
 
@@ -460,9 +461,12 @@ ul.product-tags {
 }
 .image-container>.after>a>span.fw-stack.fw-lg {
     /* background: red; */
-    left: 40%;
-    top: 30%;
     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     font-size: 26px;
 }
 .input-wrap>.form-control, .input-wrap .btn.wrap-input-right  {
