@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>WSO2 APP Manager</title>
+    <title>WSO2 APP Store</title>
     
     <link rel="shortcut icon" href="libs/theme-wso2_1.0/images/favicon.png" />
 
@@ -54,7 +54,7 @@
            <div class="pull-left brand float-remove-xs text-center-xs">
               <a href="#">
                  <img src="libs/theme-wso2_1.0/images/logo-inverse.svg" alt="wso2" title="wso2" class="logo">
-                 <h1>APP Manager</h1>
+                 <h1>APP Store</h1>
               </a>
            </div>
            <div class="pull-right auth float-remove-xs text-center-xs">
@@ -76,8 +76,7 @@
     <!-- breadcrumb-->
     <div class="breadcrumb-wrapper">
         <ol class="breadcrumb">
-            <li><a href="index.html"><i class="icon fw fw-home"></i> Home</a></li>
-            <li class="active"><a href="#">Publish API</a></li>
+            <li><a href="index.html"><i class="icon fw fw-home"></i> My Apps</a></li>
         </ol>
     </div>
 
@@ -91,30 +90,29 @@
         <div class="media-left">
 
             <nav class="navigation">
-                    <a href="#" class="active home">
-                        <span class="icon"><i class="fw fw-star"></i></span>
-                        <span class="left-menu-item hidden-xs hidden-sm">My Favourites</span>
-                    </a>
-                    <a href="#" class="purple">
-                        <span class="icon"><i class="fw fw-web-app"></i></span>
-                        <span class="left-menu-item hidden-xs hidden-sm">Web Applications</span>
-                    </a>
-                    <a href="#" class="yellow">
-                        <span class="icon"><i class="fw fw-mobile   "></i></span> <span
-                            class="left-menu-item hidden-xs hidden-sm">Mobile Applications</span>
-                    </a>
-                    <a href="#" class="orange">
-                        <span class="icon"><i class="fw fw-globe"></i></span>
-                        <span class="left-menu-item hidden-xs hidden-sm">Sites</span>
-                    </a>
-                </nav>
+                <a href="#" class="active purple">
+                    <span class="icon"><i class="fw fw-store"></i></span>
+                    <span class="left-menu-item hidden-xs hidden-sm">Store</span>
+                    <ul class="sublevel-menu">
+                        <li>testing</li>
+                    </ul>
+                </a>
+                <a href="#" class="home">
+                    <span class="icon"><i class="fw fw-heart"></i></span>
+                    <span class="left-menu-item hidden-xs hidden-sm">Favourites</span>
+                </a>
+                <a href="#" class="purple">
+                    <span class="icon"><i class="fw fw-web-app"></i></span>
+                    <span class="left-menu-item hidden-xs hidden-sm">My Apps</span>
+                </a>
+            </nav>
 
             <div class="tags-wrapper hidden-xs hidden-sm">
                     <div class="tag-title"> Tags</div>
                     <ul class="tag-content">
-                        <li class="text-muted">Business</li>
-                        <li class="text-muted">Comics</li>
-                        <li class="text-muted">Communication</li>
+                        <li>Business</li>
+                        <li>Comics</li>
+                        <li class="active">Communication</li>
                         <li>Education</li>
                         <li>Entertainment</li>
                         <li>Finance</li>
@@ -161,33 +159,14 @@
                     <div class="page-title">
                         <h3>Web Applications</h3>
                     </div>
-                    <div class="page-actions">
-                        <ul class="product-tags">
-                            <li class="alert tag-label" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>Business
-                            </li>
-
-                            <li class="alert tag-label" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>Comics
-                            </li>
-
-                            <li class="alert tag-label" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>Communication
-                            </li>
-
-                        </ul>
-                    </div>
                 </div>
                 <div class="page-content">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
+                                <div class="ribbon">
+                                    <span class="icon"><i class="fw fw-heart"></i></span>
+                                </div>
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-1.jpg" alt="">
                                     <div class="after">
@@ -199,29 +178,22 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
+                                <div class="ribbon">
+                                </div>
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-2.jpg" alt="">
                                     <div class="after">
@@ -233,29 +205,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-3.jpg" alt="">
                                     <div class="after">
@@ -267,29 +230,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-4.jpg" alt="">
                                     <div class="after">
@@ -301,29 +255,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-5.jpg" alt="">
                                     <div class="after">
@@ -335,29 +280,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-6.jpg" alt="">
                                     <div class="after">
@@ -369,29 +305,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-7.jpg" alt="">
                                     <div class="after">
@@ -403,29 +330,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-8.jpg" alt="">
                                     <div class="after">
@@ -437,29 +355,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-9.jpg" alt="">
                                     <div class="after">
@@ -471,29 +380,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-10.jpg" alt="">
                                     <div class="after">
@@ -505,29 +405,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-11.jpg" alt="">
                                     <div class="after">
@@ -539,29 +430,20 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper">
+                            <div class="white-wrapper add-margin-bottom-4x">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-12.jpg" alt="">
                                     <div class="after">
@@ -573,24 +455,15 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x add-margin-bottom-4x">
+                                <div class="add-padding-2x app-data ">
                                     <h4><a href="#">Project Name</a></h4>
+                                    <h5><a href="#">v1.0.0</a></h5>
                                     <p>Admin</p>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
                                     <i class="fw fw-star"></i>
-                                    <div class="more-info pull-right">
-                                        <a href="#" class="dropdown-toggle more-list" data-toggle="dropdown">
-                                            <i class="fw fw-ellipsis fw-rotate-90"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Download</a></li>
-                                            <li><a href="#">Bookmark</a></li>
-                                            <li><a href="#">More Details</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -605,7 +478,7 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container-fluid">
-            <p>WSO2 API Manager | &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>. All Rights Reserved.</p>
+            <p>WSO2 App Manager v1.0.0 | &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>.</p>
         </div>
     </footer>
 
