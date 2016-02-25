@@ -51,34 +51,63 @@
     <!-- header -->
     <header class="header header-default">
         <div class="container-fluid">
-           <div class="pull-left brand float-remove-xs text-center-xs">
-              <a href="#">
-                 <img src="libs/theme-wso2_1.0/images/logo-inverse.svg" alt="wso2" title="wso2" class="logo">
-                 <h1>APP Store</h1>
-              </a>
-           </div>
-           <div class="pull-right auth float-remove-xs text-center-xs">
-             <a href="#" class="dropdown" data-toggle="dropdown">
-               <span class="hidden-xs add-padding-left-3x">administrator <span class="caret"></span></span>
-               <span class="icon fw-stack fw-lg">
-                   <i class="fw fw-user fw-stack-1x"></i>
-               </span>
-             </a>
-             <ul class="dropdown-menu float-remove-xs position-static-xs text-center-xs remove-margin-xs slideInDown" role="menu">
-               <li class="dropdown-header visible-xs">administrator <span class="caret"></span></li>
-               <li class="divider visible-xs"></li>
-               <li><a href="#">Sign out</a></li>
-             </ul>
-           </div>
+            <div class="pull-left brand float-remove-xs text-center-xs">
+                <a href="#">
+                    <img src="libs/theme-wso2_1.0/images/logo-inverse.svg" alt="wso2" title="wso2" class="logo">
+
+                    <h1>APP Manager</h1>
+                </a>
+            </div>
+            <div class="pull-right auth float-remove-xs text-center-xs">
+                <a href="#" class="dropdown" data-toggle="dropdown">
+                    <span class="hidden-xs add-padding-left-3x">administrator <span class="caret"></span></span>
+                   <span class="icon fw-stack fw-lg">
+                       <i class="fw fw-user fw-stack-1x"></i>
+                   </span>
+                </a>
+                <ul class="dropdown-menu float-remove-xs position-static-xs text-center-xs remove-margin-xs slideInDown"
+                    role="menu">
+                    <li class="dropdown-header visible-xs">administrator <span class="caret"></span></li>
+                    <li class="divider visible-xs"></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+            </div>
         </div>
     </header>
-    
-    <!-- breadcrumb-->
-    <div class="breadcrumb-wrapper">
-        <ol class="breadcrumb">
-            <li><a href="index.html"><i class="icon fw fw-home"></i> My Apps</a></li>
-        </ol>
-    </div>
+
+    <!-- navbar -->
+    <nav id="appm-navbar-nav" class="navbar navbar-default" data-spy="affix" data-offset-top="50" data-offset-bottom="40">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-menu-toggle collapsed" data-toggle="collapse" data-target="#appm-navbar" aria-expanded="false"
+                   aria-controls="appm-navbar">
+                        <span class="icon fw-stack">
+                            <i class="fw fw-down fw-stack-1x toggle-icon-up"></i>
+                        </span>
+                </a>
+                <ol class="breadcrumb navbar-brand">
+                    <li><a href="index.html"><i class="icon fw fw-home"></i></a></li>
+                    <li><a href="#">My Favorites</a></li>
+                    <li class="active"><a href="#">Web Applications</a></li>
+                </ol>
+            </div>
+        </div>
+        <div id="appm-navbar" class="collapse navbar-collapse dropdown tiles"><!-- nav-collapse -->
+            <ul class="nav navbar-nav">
+                <li><a href="#"><i class="fw fw-heart"></i>My Favorites</a></li>
+                <li><a href="#"><i class="fw fw-application"></i>Apps</a></li>
+                <li><a href="#"><i class="fw fw-store"></i>Store</a></li>
+            </ul>
+        </div>
+        <!--/ .nav-collapse -->
+    </nav>
 
     <!-- #page-content-wrapper -->
     <div class="page-content-wrapper">
@@ -90,20 +119,17 @@
         <div class="media-left">
 
             <nav class="navigation">
-                <a href="#" class="active purple">
-                    <span class="icon"><i class="fw fw-store"></i></span>
-                    <span class="left-menu-item hidden-xs hidden-sm">Store</span>
-                    <ul class="sublevel-menu">
-                        <li>testing</li>
-                    </ul>
-                </a>
-                <a href="#" class="home">
-                    <span class="icon"><i class="fw fw-heart"></i></span>
-                    <span class="left-menu-item hidden-xs hidden-sm">Favourites</span>
-                </a>
-                <a href="#" class="purple">
+                <a href="#" class="active home">
                     <span class="icon"><i class="fw fw-web-app"></i></span>
-                    <span class="left-menu-item hidden-xs hidden-sm">My Apps</span>
+                    <span class="left-menu-item">Web Applications</span>
+                </a>
+                <a href="#" class="yellow">
+                    <span class="icon"><i class="fw fw-mobile   "></i></span> <span
+                        class="left-menu-item">Mobile Applications</span>
+                </a>
+                <a href="#" class="orange">
+                    <span class="icon"><i class="fw fw-globe"></i></span>
+                    <span class="left-menu-item">Sites</span>
                 </a>
             </nav>
 
