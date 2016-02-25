@@ -773,3 +773,12 @@ ul.nav.nav-tabs {
     background-color: #444444;
     border: 1px solid #444444;
 }
+
+.navbar > .container .appm-breadcrumb a, .navbar > .container-fluid .appm-breadcrumb a,
+.appm-breadcrumb>li+li:before{
+    color:#999;
+}
+.navbar > .container .appm-breadcrumb a:hover, .navbar > .container-fluid .appm-breadcrumb a:hover,
+.navbar > .container .appm-breadcrumb .active a, .navbar > .container-fluid .appm-breadcrumb .active a{
+    color:#fff;
+}
