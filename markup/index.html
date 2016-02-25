@@ -139,14 +139,23 @@
                     <!-- Search-->
                     <div class="form-group">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                            <div class="input-group input-wrap">
+                            <div class="input-group input-wrap search-wrap">
+                                <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search by <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Name</a></li>
+                                      <li><a href="#">Version</a></li>
+                                      <li><a href="#">Developer</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
                                 <input type="text" class="form-control" placeholder="Search for...">
+                                
                                 <div class="input-group-btn">
                                     <button class="btn btn-default wrap-input-right" type="button" title="Search">
                                         <i class="fw fw-search" aria-hidden="true"></i>
                                     </button>
                                 </div>
-                            </div>
+                            </div><!-- /input-group -->
                         </div>
                     </div>
                 </nav>

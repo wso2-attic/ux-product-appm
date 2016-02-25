@@ -382,6 +382,16 @@ nav.navigation .second_level > .left-menu-item {
     width: 193px;
 
 }
+.search-wrap .dropdown-toggle{
+    color: #FFF;
+    background-color: #215080;
+    border-color: #215080;
+    padding: 9px 12px;
+    margin-top: -3px;
+}
+.search-wrap .dropdown-toggle:hover{
+    border-color: #215080;
+}
 a.btn .icon-caret, .btn .icon-caret {
     margin-left: 49px;
     border: none;
@@ -433,6 +443,12 @@ ul.product-tags {
 .white-wrapper{
     background-color: #ffffff;
     position: relative;
+}
+.tab-content {
+    padding: 20px 17px;
+}
+.tab-content h3{
+    margin-top:0px;
 }
 .app-data h4{
     margin-bottom: 0px

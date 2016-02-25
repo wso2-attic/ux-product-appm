@@ -141,14 +141,23 @@
                     <!-- Search-->
                     <div class="form-group">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                            <div class="input-group input-wrap">
+                            <div class="input-group input-wrap search-wrap">
+                                <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search by <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Name</a></li>
+                                      <li><a href="#">Version</a></li>
+                                      <li><a href="#">Developer</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
                                 <input type="text" class="form-control" placeholder="Search for...">
+                                
                                 <div class="input-group-btn">
                                     <button class="btn btn-default wrap-input-right" type="button" title="Search">
                                         <i class="fw fw-search" aria-hidden="true"></i>
                                     </button>
                                 </div>
-                            </div>
+                            </div><!-- /input-group -->
                         </div>
                     </div>
                 </nav>
@@ -160,27 +169,6 @@
                 <div class="page-header">
                     <div class="page-title">
                         <h3>Web Applications</h3>
-                    </div>
-                    <div class="page-actions hidden-xs hidden-sm">
-                        <ul class="product-tags">
-                            <li class="alert tag-label" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>Business
-                            </li>
-
-                            <li class="alert tag-label" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>Comics
-                            </li>
-                            <li class="alert tag-label" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>Communication
-                            </li>
-
-                        </ul>
                     </div>
                 </div>
                 <div class="page-content">
@@ -216,6 +204,9 @@
                                         <i class="fw fw-star"></i>
                                     </div>
                                     <button type="button" class="btn add-margin-top-2x">Subscribe</button>
+                                    <button type="button" class="btn add-margin-top-2x">Un-Subscribe</button>
+                                    <button type="button" class="btn add-margin-top-2x">Download</button>
+                                    <button type="button" class="btn add-margin-top-2x">Install</button>
                                 </div>
                             </div>
                             <div class="add-margin-top-5x white-wrapper">
@@ -223,6 +214,7 @@
                                     <li class="active"><a data-toggle="tab" href="#home">Overview</a></li>
                                     <li><a data-toggle="tab" href="#menu1">Documentation</a></li>
                                     <li><a data-toggle="tab" href="#menu2">User Reviews</a></li>
+                                    <li><a data-toggle="tab" href="#menu3">Screenshots</a></li>
                                 </ul>
 
                                 <div class="tab-content">
@@ -237,6 +229,9 @@
                                     <div id="menu2" class="tab-pane fade">
                                         <h3>User Reviews</h3>
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                    </div>
+                                    <div id="menu3" class="tab-pane fade">
+                                        <h3>SCREENSHOTS</h3>
                                     </div>
                                 </div>
                             </div>
@@ -484,6 +479,9 @@
 
     <!-- WSO2 left-navigation -->
     <script src="js/left-navigation.js"></script>
+
+    <!-- Arbitary Scripts -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
