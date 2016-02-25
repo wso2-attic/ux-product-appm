@@ -731,3 +731,12 @@ button.btn.btn-default.dropdown-toggle:hover {
     color: #fff;
     border-color: #315B86;
 }
+ul.nav.nav-tabs {
+    background-color: #ddd;
+}
+.white-wrapper>.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover .nav-tabs>li.active>a:visited {
+    background-color: #fff;
+    border: 1px solid #FFF;
+    border-bottom-color: 0;
+    border-radius: 0;
+}
