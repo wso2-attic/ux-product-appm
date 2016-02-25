@@ -1,7 +1,7 @@
 $(window).load(function(){
 
 	$(".search-wrap .dropdown-menu li a").click(function(){
-	  	$(".search-wrap .dropdown-toggle").text($(this).text());
+	  	$(".search-wrap .dropdown-toggle").html($(this).text() + ' <span class="caret"></span>');
 	});
 
 })

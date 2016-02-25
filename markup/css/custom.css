@@ -109,7 +109,7 @@ nav.navigation.sublevel-menu{
     display: none;
 }
 
-nav.navigation > a.home, nav.navigation > a.home .left-menu-item {
+nav.navigation > a.home .icon {
     background: #c0392b;
     color: white;
 }
@@ -398,6 +398,26 @@ nav.navigation .second_level > .left-menu-item {
 a.btn .icon-caret, .btn .icon-caret {
     margin-left: 49px;
     border: none;
+}
+.btn{
+    background-color: #0E75DC;
+    color: #fff;
+}
+.btn .disabled{
+    background-color: #0E75DC;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #005ABA;
+    color: #fff;
+}
+.btn-secondary{
+    background-color: #444;
+    color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #686868;
+    color: #fff;
 }
 .product-tags{
     float: left;
