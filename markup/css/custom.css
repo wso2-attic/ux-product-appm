@@ -740,3 +740,10 @@ ul.nav.nav-tabs {
     border-bottom-color: 0;
     border-radius: 0;
 }
+.white-wrapper>.nav-tabs>li>a:hover {
+    border-radius: 0;
+}
+.body-wrapper>hr{
+    border-top: 1px solid #CECDCD;
+    margin-top: 50px;
+}
