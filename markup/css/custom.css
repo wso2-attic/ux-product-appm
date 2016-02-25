@@ -482,23 +482,25 @@ ul.product-tags {
 .app-data h5{
     margin-top: 0px;
 }
-.ribbon{
+.ribbon {
     display: block;
     position: absolute;
     top: 0px;
     left: 20px;
-    width: 25px;
+    width: 33px;
     height: 35px;
-    line-height: 49px;
+    line-height: 40px;
     text-align: center;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     font-size: 15px;
     font-weight: 700;
-    color: red;
-    background-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    background-color: #C0392B;
     border: none;
     z-index: 500;
+    padding-bottom: 7px;
 }
+
 
 /*========================*/
 
@@ -704,13 +706,13 @@ ul.product-tags {
 #appm-navbar-nav > .container .navbar-brand, #appm-navbar-nav > .container-fluid .navbar-brand{
     background:none;
 }
+.summary-wrapper{
+    color:#909090;
+    margin-bottom: 10px;
+}
 
 .page-content .white-wrapper h4{
     margin-top:0px;
-}
-.page-content .white-wrapper p{
-    margin-bottom:0px;
-    color:#e4e4e4;
 }
 button.btn.btn-default.dropdown-toggle {
     background-color: #444;
