@@ -7,6 +7,9 @@
 header{
     background:#202020;
 }
+ol.breadcrumb.navbar-brand {
+    height: 40px;
+}
 .page-header {
     height: auto;
     padding: 20px 00px;
@@ -688,4 +691,17 @@ ul.product-tags {
 .page-content .white-wrapper p{
     margin-bottom:0px;
     color:#e4e4e4;
+}
+button.btn.btn-default.dropdown-toggle {
+    background-color: #444;
+    border-color: #444;
+}
+button.btn.btn-default.dropdown-toggle:hover {
+    background-color: #686868;
+    border-color: #686868;
+}
+.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+    background-color: #686868;
+    color: #fff;
+    border-color: #686868;
 }
