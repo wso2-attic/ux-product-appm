@@ -26,6 +26,10 @@ header{
     float: left;
     margin-right: 20px;
 }
+.page-title h3{
+    margin: 0px;
+}
+
 
 .media {
     margin-top: 0px;
@@ -44,7 +48,6 @@ nav.navigation {
     background: #525252;
     color: #fff;
     position: relative;
-    padding-top: 40px;
     min-height: 100px;
     -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
@@ -94,9 +97,16 @@ nav.navigation > a > .left-menu-item {
     font-size: 14px;
 }
 
-nav.navigation > a.active {
-    top: 0;
-    position: absolute;
+nav a.active .sublevel-menu {
+    display: block;
+}
+
+nav .sublevel-menu {
+    display: none;
+}
+
+nav.navigation.sublevel-menu{
+    display: none;
 }
 
 nav.navigation > a.home, nav.navigation > a.home .left-menu-item {
@@ -318,6 +328,12 @@ nav.navigation .second_level > .left-menu-item {
     background-color: #C9E4FF;
     border: 1px solid #C9E4FF;
 }
+
+.tag-content > li.active {
+    background-color: #C9E4FF;
+    border: 1px solid #C9E4FF;
+}
+
 .tag-more {
     float: right;
     margin-right: 11px;
@@ -414,8 +430,36 @@ ul.product-tags {
     border: 1px solid #C9E4FF;
     text-decoration: none;
 }
-.product-tags>.alert{margin-bottom: 0;}
-.white-wrapper{background-color: #ffffff}
+.product-tags>.alert{
+    margin-bottom: 0;
+}
+.white-wrapper{
+    background-color: #ffffff;
+    position: relative;
+}
+.app-data h4{
+    margin-bottom: 0px
+}
+.app-data h5{
+    margin-top: 0px;
+}
+.ribbon{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 25px;
+    height: 35px;
+    line-height: 49px;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    z-index: 500;
+}
 
 /*========================*/
 
