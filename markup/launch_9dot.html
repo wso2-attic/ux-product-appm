@@ -22,21 +22,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>WSO2 APP Store</title>
-    
-    <link rel="shortcut icon" href="libs/theme-wso2_1.0/images/favicon.png" />
+    <title>WSO2 APP Manager</title>
+
+    <link rel="shortcut icon" href="libs/theme-wso2_1.0/images/favicon.png"/>
 
     <!-- Bootstrap CSS -->
-    <link href="libs/bootstrap_3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap_3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- Font WSO2 CSS -->
-    <link href="libs/font-wso2_1.0.0/css/font-wso2.min.css" rel="stylesheet" type="text/css" />
+    <link href="libs/font-wso2_1.0.0/css/font-wso2.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- Theme WSO2 CSS -->
-    <link href="libs/theme-wso2_1.0/css/theme-wso2.css" rel="stylesheet" type="text/css" />
+    <link href="libs/theme-wso2_1.0/css/theme-wso2.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,33 +47,33 @@
 
 </head>
 <body>
-    
-    <!-- header -->
-    <header class="header header-default">
-        <div class="container-fluid">
-            <div class="pull-left brand float-remove-xs text-center-xs">
-                <a href="#">
-                    <img src="libs/theme-wso2_1.0/images/logo-inverse.svg" alt="wso2" title="wso2" class="logo">
 
-                    <h1>APP Manager</h1>
-                </a>
-            </div>
-            <div class="pull-right auth float-remove-xs text-center-xs">
-                <a href="#" class="dropdown" data-toggle="dropdown">
-                    <span class="hidden-xs add-padding-left-3x">administrator <span class="caret"></span></span>
-                   <span class="icon fw-stack fw-lg">
-                       <i class="fw fw-user fw-stack-1x"></i>
-                   </span>
-                </a>
-                <ul class="dropdown-menu float-remove-xs position-static-xs text-center-xs remove-margin-xs slideInDown"
-                    role="menu">
-                    <li class="dropdown-header visible-xs">administrator <span class="caret"></span></li>
-                    <li class="divider visible-xs"></li>
-                    <li><a href="#">Sign out</a></li>
-                </ul>
-            </div>
+<!-- header -->
+<header class="header header-default">
+    <div class="container-fluid">
+        <div class="pull-left brand float-remove-xs text-center-xs">
+            <a href="#">
+                <img src="libs/theme-wso2_1.0/images/logo-inverse.svg" alt="wso2" title="wso2" class="logo">
+
+                <h1>APP Manager</h1>
+            </a>
         </div>
-    </header>
+        <div class="pull-right auth float-remove-xs text-center-xs">
+            <a href="#" class="dropdown" data-toggle="dropdown">
+                <span class="hidden-xs add-padding-left-3x">administrator <span class="caret"></span></span>
+               <span class="icon fw-stack fw-lg">
+                   <i class="fw fw-user fw-stack-1x"></i>
+               </span>
+            </a>
+            <ul class="dropdown-menu float-remove-xs position-static-xs text-center-xs remove-margin-xs slideInDown"
+                role="menu">
+                <li class="dropdown-header visible-xs">administrator <span class="caret"></span></li>
+                <li class="divider visible-xs"></li>
+                <li><a href="#">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
     <!-- navbar -->
     <nav id="appm-navbar-nav" class="navbar navbar-default" data-spy="affix" data-offset-top="50" data-offset-bottom="40">
@@ -86,34 +86,46 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-menu-toggle collapsed" data-toggle="collapse" data-target="#appm-navbar" aria-expanded="false"
-                   aria-controls="appm-navbar">
-                        <span class="icon fw-stack">
-                            <i class="fw fw-down fw-stack-1x toggle-icon-up"></i>
-                        </span>
+                <a class="navbar-menu-toggle" data-toggle="dropdown">
+                    <span class="icon fw-stack">
+                        <i class="fw fw-tiles fw-stack-1x"></i>
+                    </span>
                 </a>
                 <ol class="breadcrumb navbar-brand">
                     <li><a href="index.html"><i class="icon fw fw-home"></i></a></li>
                     <li><a href="#">My Favorites</a></li>
                     <li class="active"><a href="#">Web Applications</a></li>
                 </ol>
+                <ul class="dropdown-menu tiles arrow dark add-margin-1x" role="menu">
+                    <li>
+                        <a href="#">
+                            <i class="icon fw fw-heart"></i>
+                            <span class="name">My Favorites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon fw fw-application"></i>
+                            <span class="name">Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon fw fw-store"></i>
+                            <span class="name">Store</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="appm-navbar" class="collapse navbar-collapse dropdown tiles"><!-- nav-collapse -->
-            <ul class="nav navbar-nav">
-                <li><a href="#"><i class="fw fw-heart"></i>My Favorites</a></li>
-                <li><a href="#"><i class="fw fw-application"></i>Apps</a></li>
-                <li><a href="#"><i class="fw fw-store"></i>Store</a></li>
-            </ul>
-        </div>
-        <!--/ .nav-collapse -->
     </nav>
 
-    <!-- #page-content-wrapper -->
-    <div class="page-content-wrapper">
 
-        <!-- media-->
-        <div class="media">
+<!-- #page-content-wrapper -->
+<div class="page-content-wrapper fixed">
+
+    <!-- media-->
+    <div class="media">
 
         <!-- media left-->
         <div class="media-left">
@@ -121,39 +133,39 @@
             <nav class="navigation">
                 <a href="#" class="active purple">
                     <span class="icon"><i class="fw fw-web-app"></i></span>
-                    <span class="left-menu-item hidden-xs hidden-sm">Web Applications</span>
+                    <span class="left-menu-item">Web Applications</span>
                 </a>
                 <a href="#" class="yellow">
                     <span class="icon"><i class="fw fw-mobile   "></i></span> <span
-                        class="left-menu-item hidden-xs hidden-sm">Mobile Applications</span>
+                        class="left-menu-item">Mobile Applications</span>
                 </a>
                 <a href="#" class="orange">
                     <span class="icon"><i class="fw fw-globe"></i></span>
-                    <span class="left-menu-item hidden-xs hidden-sm">Sites</span>
+                    <span class="left-menu-item">Sites</span>
                 </a>
             </nav>
 
-            <div class="tags-wrapper hidden-xs hidden-sm">
-                    <div class="tag-title"> Tags</div>
-                    <ul class="tag-content">
-                        <li>Business</li>
-                        <li>Comics</li>
-                        <li class="active">Communication</li>
-                        <li>Education</li>
-                        <li>Entertainment</li>
-                        <li>Finance</li>
-                        <li>Health & Fitness</li>
-                        <li>Media & Video</li>
-                        <li>Medical</li>
-                        <li>Music & Audio</li>
-                        <li>Shopping</li>
-                        <li>Social</li>
-                        <li>Sports</li>
-                        <li>Travel & Local</li>
-                        <li>Widgets</li>
-                        <div class="tag-more">more..</div>
-                    </ul>
-                </div>
+            <div class="tags-wrapper">
+                <div class="tag-title"> Tags</div>
+                <ul class="tag-content">
+                    <li class="text-muted">Business</li>
+                    <li class="text-muted">Comics</li>
+                    <li class="text-muted">Communication</li>
+                    <li>Education</li>
+                    <li>Entertainment</li>
+                    <li>Finance</li>
+                    <li>Health & Fitness</li>
+                    <li>Media & Video</li>
+                    <li>Medical</li>
+                    <li>Music & Audio</li>
+                    <li>Shopping</li>
+                    <li>Social</li>
+                    <li>Sports</li>
+                    <li>Travel & Local</li>
+                    <li>Widgets</li>
+                    <div class="tag-more"><a>more..</a></div>
+                </ul>
+            </div>
 
         </div>
 
@@ -187,6 +199,7 @@
                 </nav>
             </div>
 
+
             <!-- page content -->
             <div class="container-fluid body-wrapper">
 
@@ -197,340 +210,292 @@
                 </div>
                 <div class="page-content">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
-                                <div class="ribbon">
-                                    <span class="icon"><i class="fw fw-heart"></i></span>
-                                </div>
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-1.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
-                                <div class="ribbon">
-                                </div>
-                                <div class="image-container">
-                                    <img class="img-responsive" src="images/app-3.jpg" alt="">
-                                    <div class="after">
-                                        <a href="#">
-                                            <span class="fw-stack fw-lg">
-                                            <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="add-padding-2x app-data ">
-                                    <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-2.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
+                                <div class="image-container">
+                                    <img class="img-responsive" src="images/app-3.jpg" alt="">
+
+                                    <div class="after">
+                                        <a href="#">
+                                            <span class="fw-stack fw-lg">
+                                            <i class="fw fw-circle-outline fw-stack-2x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="add-padding-2x">
+                                    <h4><a href="#">Project Name</a></h4>
+
+                                    <p>‎V1.0.0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-4.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-5.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-6.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-7.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-8.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-9.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-10.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-11.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                            <div class="white-wrapper add-margin-bottom-4x">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="white-wrapper">
                                 <div class="image-container">
                                     <img class="img-responsive" src="images/app-12.jpg" alt="">
+
                                     <div class="after">
                                         <a href="#">
                                             <span class="fw-stack fw-lg">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
-                                            <i class="fw fw-view fw-stack-1x"></i>
+                                            <i class="fw fw-deploy fw-stack-1x"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="add-padding-2x app-data ">
+                                <div class="add-padding-2x add-margin-bottom-4x">
                                     <h4><a href="#">Project Name</a></h4>
-                                    <h5><a href="#">v1.0.0</a></h5>
-                                    <p>Admin</p>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
-                                    <i class="fw fw-star"></i>
+
+                                    <p>‎V1.0.0</p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
 
         </div>
     </div>
-    </div><!-- /#page-content-wrapper -->
-    <!--Store content goes here-->
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <p>WSO2 App Manager v1.0.0 | &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>.</p>
-        </div>
-    </footer>
+</div>
+<!-- /#page-content-wrapper -->
+<!--Store content goes here-->
+<!-- footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <p>WSO2 API Manager | &copy;
+            <script>document.write(new Date().getFullYear());</script>
+            <a href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i> Inc</a>. All Rights Reserved.
+        </p>
+    </div>
+</footer>
 
-    <!-- Jquery/Jquery UI JS -->
-    <script src="libs/jquery_1.11.0/jquery-1.11.3.min.js"></script>
+<!-- Jquery/Jquery UI JS -->
+<script src="libs/jquery_1.11.0/jquery-1.11.3.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="libs/bootstrap_3.3.5/js/bootstrap.min.js"></script>
-    
-    <!-- Theme WSO2 JS -->
-    <script src="libs/theme-wso2_1.0/js/theme-wso2.js"></script>
+<!-- Bootstrap JS -->
+<script src="libs/bootstrap_3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- WSO2 left-navigation -->
-    <script src="js/left-navigation.js"></script>
+<!-- Theme WSO2 JS -->
+<script src="libs/theme-wso2_1.0/js/theme-wso2.js"></script>
 
-    <!-- Arbitary Scripts -->
-    <script src="js/script.js"></script>
+<!-- WSO2 left-navigation -->
+<script src="js/left-navigation.js"></script>
+
+<!-- Arbitary Scripts -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
