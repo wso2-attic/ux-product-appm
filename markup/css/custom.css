@@ -65,7 +65,6 @@ nav.navigation > a, nav.navigation {
     display: table;
     height: 40px;
     color: #fff;
-    background:#202020;
     text-decoration: none;
     font-size: 16px;
     font-weight: 100;
@@ -564,7 +563,7 @@ ul.product-tags {
 }
 .input-wrap>.form-control::-webkit-input-placeholder {
     color: #fff;
-    opacity: 0.5;
+    opacity: 0.9;
     font-weight: 100;
 }
 .page-actions-right{float: right;}
@@ -701,10 +700,15 @@ ul.product-tags {
 
 #appm-navbar-nav{
     background:#21262c;
-}
 
+}
+.navbar > .container .navbar-brand a, .navbar > .container-fluid .navbar-brand a {
+    color: #C7C7C7;
+    font-size: 13px;
+}
 #appm-navbar-nav > .container .navbar-brand, #appm-navbar-nav > .container-fluid .navbar-brand{
     background:none;
+    font-size: 10px;
 }
 .summary-wrapper{
     color:#909090;
@@ -715,15 +719,15 @@ ul.product-tags {
     margin-top:0px;
 }
 button.btn.btn-default.dropdown-toggle {
-    background-color: #444;
-    border-color: #444;
+    background-color: #1C436B;
+    border-color: #1C436B;
 }
 button.btn.btn-default.dropdown-toggle:hover {
-    background-color: #686868;
-    border-color: #686868;
+    background-color: #315B86;
+    border-color: #315B86;
 }
-.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
-    background-color: #686868;
+.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:active,  .open>.dropdown-toggle.btn-default:hover{
+    background-color: #315B86;
     color: #fff;
-    border-color: #686868;
+    border-color: #315B86;
 }

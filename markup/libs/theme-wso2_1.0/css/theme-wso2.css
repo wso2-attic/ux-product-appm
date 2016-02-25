@@ -1222,6 +1222,7 @@ ul.sidebar-messages > li {
   margin: 0;
   overflow: hidden;
   text-transform: uppercase;
+  font-size: 12px;
   background: #282828;
   color: #ffffff;
   min-height: 30px;
