@@ -165,7 +165,7 @@ $base-danger-color: #d9534f;
 
 $primary-color: #1a78d8;
 $secondary-color: #e4e4e4;
-$optional-color: #DA762B;
+$optional-color: #C0392B;
 
 $header-background-color: #004673;
 $header-height: 50px;
@@ -176,7 +176,7 @@ $breadcrumb-color: $base-light-color;
 $breadcrumb-height: 30px;
 $breadcrumb-padding: 5px 15px;
 
-$navbar-height: 50px;
+$navbar-height: 40px;
 $navbar-padding: 0 15px;
 $navbar-color1: #4D5461;
 $navbar-background-color: $primary-color;
@@ -315,7 +315,7 @@ body {
     font-weight: $font-default-weight;
     width: 100%;
     overflow-x: hidden;
-    background-color: #efefef;
+    background-color:#EFEFEF ;
 }
 
 body > .page-content-wrapper > .container,
