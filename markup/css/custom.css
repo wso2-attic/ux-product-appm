@@ -478,8 +478,11 @@ ul.product-tags {
 .app-data h4{
     margin-bottom: 0px
 }
-.app-data h5{
+.app-data h5,.launch-app-data h5{
     margin-top: 0px;
+}
+.launch-app-data h4{
+    margin-top:0px;
 }
 .ribbon {
     display: block;
@@ -714,9 +717,6 @@ ul.product-tags {
     margin-bottom: 10px;
 }
 
-.page-content .white-wrapper h4{
-    margin-top:0px;
-}
 button.btn.btn-default.dropdown-toggle {
     border-right: 1px solid #EFEFEF;
 }
