@@ -4,7 +4,9 @@
         max-height: calc(100% - 130px);
     }
 }
-
+header{
+    background:#202020;
+}
 .page-header {
     height: auto;
     padding: 20px 00px;
@@ -57,6 +59,7 @@ nav.navigation > a, nav.navigation {
     display: table;
     height: 40px;
     color: #fff;
+    background:#202020;
     text-decoration: none;
     font-size: 16px;
     font-weight: 100;
@@ -611,3 +614,18 @@ ul.product-tags {
     margin: 0 0 10px 0;
 }
 
+#appm-navbar-nav{
+    background:#21262c;
+}
+
+#appm-navbar-nav > .container .navbar-brand, #appm-navbar-nav > .container-fluid .navbar-brand{
+    background:none;
+}
+
+.page-content .white-wrapper h4{
+    margin-top:0px;
+}
+.page-content .white-wrapper p{
+    margin-bottom:0px;
+    color:#e4e4e4;
+}
