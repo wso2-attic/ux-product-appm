@@ -703,7 +703,6 @@ ul.product-tags {
 
 }
 .navbar > .container .navbar-brand a, .navbar > .container-fluid .navbar-brand a {
-    color: #C7C7C7;
     font-size: 13px;
 }
 #appm-navbar-nav > .container .navbar-brand, #appm-navbar-nav > .container-fluid .navbar-brand{
@@ -754,6 +753,10 @@ ul.nav.nav-tabs {
     font-size: 16px;
     background:#1A78D8;
     color: #ffffff;
+}
+.navbar-menu-toggle:hover, .navbar-menu-toggle:focus, .navbar-menu-toggle:active {
+    color: #ffffff;
+    background: #0F5296;
 }
 .input-group-btn>ul.dropdown-menu {
     background-color: #444444;

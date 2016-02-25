@@ -724,7 +724,7 @@ body.inverse .fade-edge:after {
  * header styles
  * ======================================================================== */
 header {
-  background: #004673;
+  background: #1A78D8;
   min-height: 50px;
   position: relative;
 }
@@ -765,7 +765,7 @@ header .dropdown {
 }
 
 header .dropdown[aria-expanded=true], header .dropdown:hover {
-  background: #002740;
+  background: #155faa;
 }
 
 @media only screen and (max-width: 768px) {
@@ -850,17 +850,17 @@ header .dropdown[aria-expanded=true], header .dropdown:hover {
   padding: 0 8px;
   line-height: 40px;
   font-size: 18px;
-  background: #004673;
+  background: #215080;
   color: #ffffff;
 }
 
 .navbar-menu-toggle:hover, .navbar-menu-toggle:focus, .navbar-menu-toggle:active {
   color: #ffffff;
-  background: #002740;
+  background: #173757;
 }
 
 .navbar-menu-toggle[aria-expanded=true] {
-  background: #002d4a;
+  background: #193c60;
 }
 
 .navbar-toggle {
