@@ -86,27 +86,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-menu-toggle collapsed" data-toggle="collapse" data-target="#appm-navbar" aria-expanded="false"
-                   aria-controls="appm-navbar">
-                        <span class="icon fw-stack">
-                            <i class="fw fw-down fw-stack-1x toggle-icon-up"></i>
-                        </span>
+                <a class="navbar-menu-toggle" data-toggle="dropdown">
+                    <span class="icon fw-stack">
+                        <i class="fw fw-tiles fw-stack-1x"></i>
+                    </span>
                 </a>
                 <ol class="breadcrumb navbar-brand">
                     <li><a href="index.html"><i class="icon fw fw-home"></i></a></li>
                     <li><a href="#">My Favorites</a></li>
                     <li class="active"><a href="#">Web Applications</a></li>
                 </ol>
+                <ul class="dropdown-menu tiles arrow dark add-margin-1x" role="menu">
+                    <li>
+                        <a href="#">
+                            <i class="icon fw fw-heart"></i>
+                            <span class="name">My Favorites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon fw fw-application"></i>
+                            <span class="name">Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon fw fw-store"></i>
+                            <span class="name">Store</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="appm-navbar" class="collapse navbar-collapse dropdown tiles"><!-- nav-collapse -->
-            <ul class="nav navbar-nav">
-                <li><a href="#"><i class="fw fw-heart"></i>My Favorites</a></li>
-                <li><a href="#"><i class="fw fw-application"></i>Apps</a></li>
-                <li><a href="#"><i class="fw fw-store"></i>Store</a></li>
-            </ul>
-        </div>
-        <!--/ .nav-collapse -->
     </nav>
 
     <!-- #page-content-wrapper -->
