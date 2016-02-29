@@ -773,3 +773,8 @@ ul.nav.nav-tabs {
     background-color: #444444;
     border: 1px solid #444444;
 }
+div.image-container {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
