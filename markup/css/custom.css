@@ -478,8 +478,11 @@ ul.product-tags {
 .app-data h4{
     margin-bottom: 0px
 }
-.app-data h5{
+.app-data h5,.launch-app-data h5{
     margin-top: 0px;
+}
+.launch-app-data h4{
+    margin-top:0px;
 }
 .ribbon {
     display: block;
@@ -714,9 +717,6 @@ ul.product-tags {
     margin-bottom: 10px;
 }
 
-.page-content .white-wrapper h4{
-    margin-top:0px;
-}
 button.btn.btn-default.dropdown-toggle {
     border-right: 1px solid #EFEFEF;
 }
@@ -772,6 +772,33 @@ ul.nav.nav-tabs {
     color: #fff;
     background-color: #444444;
     border: 1px solid #444444;
+}
+
+.navbar > .container .appm-breadcrumb a, .navbar > .container-fluid .appm-breadcrumb a,
+.appm-breadcrumb>li+li:before{
+    color:#999;
+}
+.navbar > .container .appm-breadcrumb a:hover, .navbar > .container-fluid .appm-breadcrumb a:hover,
+.navbar > .container .appm-breadcrumb .active a, .navbar > .container-fluid .appm-breadcrumb .active a{
+    color:#fff;
+}
+
+.appm-content-search::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #909;
+}
+.appm-content-search:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #909;
+   opacity:  1;
+}
+.appm-content-search::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #909;
+   opacity:  1;
+}
+.appm-content-search:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #909;
+}
+.appm-content-search::placeholder { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #909;
 }
 div.image-container {
     width: auto;
